@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "f079f2e6-ae32-4d0c-ba62-061f5d4d2b62",
+		"name": "SRI01-CRUD-Niedźwiedzki-s19450",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pobieranie listy obiektów",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "x-apikey",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "36a6f4b5f50c65de352dffad9663a2e559c3d",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://s19450-2eb4.restdb.io/rest/people",
+					"protocol": "https",
+					"host": [
+						"s19450-2eb4",
+						"restdb",
+						"io"
+					],
+					"path": [
+						"rest",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pobieranie pojedynczego obiektu po id",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "x-apikey",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "36a6f4b5f50c65de352dffad9663a2e559c3d",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://s19450-2eb4.restdb.io/rest/people/5e760b7ae332cd26000178cb",
+					"protocol": "https",
+					"host": [
+						"s19450-2eb4",
+						"restdb",
+						"io"
+					],
+					"path": [
+						"rest",
+						"people",
+						"5e760b7ae332cd26000178cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aktualizacja obiektu",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "x-apikey",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "36a6f4b5f50c65de352dffad9663a2e559c3d",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sex\": \"Male\",\r\n  \"first_name\": \"Konrad\",\r\n  \"last_name\": \"Niedzwiedzki\",\r\n  \"job\": \"Clinical Specialist\",\r\n  \"email\": \"gturner75t@webnode.com\",\r\n  \"location\": {\r\n    \"city\": \"Ismailia\",\r\n    \"address\": {\r\n      \"streetname\": \"Cody\",\r\n      \"streetnumber\": \"7177\"\r\n    }\r\n  },\r\n  \"description\": \"penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean\",\r\n  \"height\": 186.49,\r\n  \"weight\": 67.33,\r\n  \"birth_date\": \"1954-02-22T12:59:08.000Z\",\r\n  \"nationality\": \"Egypt\",\r\n  \"credit\": [\r\n    {\r\n      \"type\": \"switch\",\r\n      \"number\": \"6304160029746791\",\r\n      \"currency\": \"IDR\",\r\n      \"balance\": 5996.85\r\n    },\r\n    {\r\n      \"type\": \"jcb\",\r\n      \"number\": \"3532008349678916\",\r\n      \"currency\": \"CNY\",\r\n      \"balance\": 4759.8\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://s19450-2eb4.restdb.io/rest/people/5e760b7ae332cd26000178cb",
+					"protocol": "https",
+					"host": [
+						"s19450-2eb4",
+						"restdb",
+						"io"
+					],
+					"path": [
+						"rest",
+						"people",
+						"5e760b7ae332cd26000178cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usunięcie obiektu",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "x-apikey",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "36a6f4b5f50c65de352dffad9663a2e559c3d",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://s19450-2eb4.restdb.io/rest/people/5e760b7ae332cd26000178dd",
+					"protocol": "https",
+					"host": [
+						"s19450-2eb4",
+						"restdb",
+						"io"
+					],
+					"path": [
+						"rest",
+						"people",
+						"5e760b7ae332cd26000178dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dodanie nowego obiektu",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "x-apikey",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "36a6f4b5f50c65de352dffad9663a2e559c3d",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sex\": \"Male\",\r\n  \"first_name\": \"Konrad\",\r\n  \"last_name\": \"Niedzwiedzki\",\r\n  \"job\": \"Developer\",\r\n  \"email\": \"konrad.niedzwiedzki@protonmail.com\",\r\n  \"location\": {\r\n    \"city\": \"Warsaw\",\r\n    \"address\": {\r\n      \"streetname\": \"Kowalska\",\r\n      \"streetnumber\": \"123\"\r\n    }\r\n  },\r\n  \"description\": \"a libero nam dui proin leo odio porttitor id consequat in consequat ut\",\r\n  \"height\": 193.56,\r\n  \"weight\": 82.56,\r\n  \"birth_date\": \"1941-08-11T05:45:14.000Z\",\r\n  \"nationality\": \"Thailand\",\r\n  \"credit\": [\r\n    {\r\n      \"type\": \"switch\",\r\n      \"number\": \"3545542441310189\",\r\n      \"currency\": \"JPY\",\r\n      \"balance\": 7019.29\r\n    },\r\n    {\r\n      \"type\": \"jcb\",\r\n      \"number\": \"3536138823952242\",\r\n      \"currency\": \"IDR\",\r\n      \"balance\": 5336.93\r\n    },\r\n    {\r\n      \"type\": \"jcb\",\r\n      \"number\": \"3586192662242099\",\r\n      \"currency\": \"EUR\",\r\n      \"balance\": 5214.91\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://s19450-2eb4.restdb.io/rest/people",
+					"protocol": "https",
+					"host": [
+						"s19450-2eb4",
+						"restdb",
+						"io"
+					],
+					"path": [
+						"rest",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aktualizacja obiektu (PATCH)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "x-apikey",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "36a6f4b5f50c65de352dffad9663a2e559c3d",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"last_name\": \"Niedzwiedzki\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://s19450-2eb4.restdb.io/rest/people/5e760b7ae332cd26000178dc",
+					"protocol": "https",
+					"host": [
+						"s19450-2eb4",
+						"restdb",
+						"io"
+					],
+					"path": [
+						"rest",
+						"people",
+						"5e760b7ae332cd26000178dc"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

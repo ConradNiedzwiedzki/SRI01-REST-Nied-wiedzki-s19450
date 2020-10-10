@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "2803c4ba-a06b-4c90-b3c5-2e627d476c7a",
+		"name": "SRI01-API-Niedźwiedzki-s19450",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET List markets (skyscanner)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "056d0d9e8bmsh65e7563968bb54fp1e3f95jsn2b706ea41002",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-rapidapi-key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/reference/v1.0/countries/pl-PL",
+					"protocol": "https",
+					"host": [
+						"skyscanner-skyscanner-flight-search-v1",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"apiservices",
+						"reference",
+						"v1.0",
+						"countries",
+						"pl-PL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create session (skyscanner)",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": false
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "056d0d9e8bmsh65e7563968bb54fp1e3f95jsn2b706ea41002",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "056d0d9e8bmsh65e7563968bb54fp1e3f95jsn2b706ea41002",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "inboundDate=2020-07-26&cabinClass=economy&children=0&infants=0&country=PL&currency=PLN&locale=pl-PL&originPlace=WAW-sky&destinationPlace=WMI-sky&outboundDate=2020-07-19&adults=2"
+				},
+				"url": {
+					"raw": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
+					"protocol": "https",
+					"host": [
+						"skyscanner-skyscanner-flight-search-v1",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"apiservices",
+						"pricing",
+						"v1.0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  List Places (skyscanner)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "056d0d9e8bmsh65e7563968bb54fp1e3f95jsn2b706ea41002",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-rapidapi-key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/PL/PLN/pl-PL/?query=Warsaw",
+					"protocol": "https",
+					"host": [
+						"skyscanner-skyscanner-flight-search-v1",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"apiservices",
+						"autosuggest",
+						"v1.0",
+						"PL",
+						"PLN",
+						"pl-PL",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Warsaw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Quick Answer (Recipe - Food - Nutrition)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "056d0d9e8bmsh65e7563968bb54fp1e3f95jsn2b706ea41002",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/quickAnswer?q=How much vitamin A is in 2 carrots?",
+					"protocol": "https",
+					"host": [
+						"spoonacular-recipe-food-nutrition-v1",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"recipes",
+						"quickAnswer"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "How much vitamin A is in 3 carrots?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Detect Food in Text (Recipe - Food - Nutrition)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "056d0d9e8bmsh65e7563968bb54fp1e3f95jsn2b706ea41002",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "text=When%20doing%20tasks%20for%20SRI%2C%20I%20like%20to%20grab%20a%20pizza%20with%20mushrooms%2C%20tomatoes%2C%20pepperoni%20and%20also%20some%20cola%20to%20drink."
+				},
+				"url": {
+					"raw": "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/detect",
+					"protocol": "https",
+					"host": [
+						"spoonacular-recipe-food-nutrition-v1",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"food",
+						"detect"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "abe82999-a6bf-4ff1-b9ad-a07cf592d421",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0b2d2850-f652-4b06-8531-9b90f421ca12",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
